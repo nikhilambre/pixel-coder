@@ -1,0 +1,268 @@
+//
+//  Stylesheet designed for http://www.PixelCoders.in - 2014
+//  Designed by the team PixelCoders.
+//
+//__________________________________________________
+
+
+
+
+//__________________________________________________
+//
+//      Variables defination
+//__________________________________________________
+
+
+//      Fonts defination
+//__________________________________________________
+
+
+//  Font family
+@font-family-logo:          'Josefin Sans', sans-serif;
+@font-family-h2:            'Francois One', sans-serif;
+@font-family-h3:            'Francois One', sans-serif;
+@font-family-p:             'Open Sans', sans-serif;
+@font-family-1:             'aaarghnormal', Arial, sans-serif;
+@font-family-2:             'Roboto', cursive, sans-serif;
+
+//  Font size
+@font-size-logo:             2.6em;
+@font-size-h2:               2.7em;
+@font-size-h3:               2em;
+@font-size-p:                1.1em;	
+@font-size-1:                5.5em;
+@font-size-2:                3em;
+
+//  Font line height
+@font-line-height-logo:      1em;
+@font-line-height-h2:        1.2em;
+@font-line-height-h3:        1.2em;
+@font-line-height-p:         1.6em;
+@font-line-height-1:         1em;
+@font-line-height-2:         1.6em;
+
+
+//  Font Notes
+//  Font for bold letters:   Francois One, 
+//  Font for headers:        
+//  Font for tag lines:      
+//
+//
+
+
+//      Colors defination
+//__________________________________________________
+
+
+@w:                          #fff;
+@w-trans1:                   rgba(255,255,255,0.4);
+@w-trans2:                   rgba(255,255,255,0.85);
+@b:                          #000;
+@b-trans1:                   rgba(0,0,0,0.3);
+@b-trans2:                   rgba(0,0,0,0.8);
+@t:                          transparent;
+
+
+//  Gray shades
+@gray-darker:                lighten(#000, 10%);     // #222
+@gray-dark:                  lighten(#000, 20%);     // #333
+@gray:                       lighten(#000, 33.5%);   // #555
+@gray-light:                 lighten(#000, 60%);     // #999
+@gray-lighter:               lighten(#000, 93.5%);   // #eee
+@gray-lightmost:             lighten(#000, 97%);     // #F7F7F7   
+
+
+//  Theme colors
+@theme-color-darker:         darken(spin(@theme-color, -10), 20%);
+@theme-color-dark:           darken(spin(@theme-color, -5), 10%);
+@theme-color:                #4AB9B0;
+@theme-color-light:          lighten(spin(@theme-color, 5), 10%);
+@theme-color-lighter:        lighten(spin(@theme-color, 10), 40%);
+
+
+//  Single color pack
+
+@color:                      #38c8e0;          //  rgb = 56,200,224
+
+@color-trans-light:          rgba(56,200,224,0.15);
+@color-trans-dark:           rgba(56,200,224,0.7);
+
+@color-light:                lighten(@color, 20%);
+@color-dark:                 darken(@color, 20%);
+
+
+//  Multi Colors pack
+
+@color1:    #4AB9B0;                  @color1-hover:  lighten(@color1, 20%);      //rgba(74,185,176,1)
+@color2:    rgba(56,200,224,0.15);    @color3-hover:  lighten(@color3, 20%);      //rgba(56,200,224,1)  #38c8e0
+@color3:    rgba(56,200,224,0.7);     @color3-hover:  lighten(@color3, 20%);      //rgba(56,200,224,1)  #38c8e0
+@color4:    #38c8e0;                  @color4-hover:  lighten(@color4, 20%);      //rgba(232,90,128,1)
+@color5:    rgba(255,255,255,0.92);
+@color6:    rgba(231,214,60,0.15);     //#E7D63C
+@color7:    rgba(0,0,0,0.3);
+
+
+
+//  Sample colors
+
+//  green
+//  #72C02C     #7fba00     #97ba0c     #B2d237     #2EC971
+//  #32CDC7     #91aa68     #16A085     #27AE60     #1ABC9C
+
+//  blue
+//  #428bca     #16cbe6     #0bb3e0     #38c8e0
+//  #5bc2ce     #5cc9df     #76BCE1     #2790b0
+
+//  pink & Red
+//  #db84ad     #E0005B     #F0626A     #FE80C0
+
+//  yellow
+//  #ffeb41     #F1C40F
+
+//  orange
+//  #F86D18     #E74C3C
+
+//  purple
+//  #B24A7D 	  #8D708E     #9B59B6
+
+
+//  Brand colors
+
+//	facebook		  #3b5998
+//	twitter		  	#55acee
+//	google plus		#dd4b39
+//	linkedIn	  	#0976b4
+//	digg			    #000000
+//	youtube		  	#e52d27
+//	skype			    #00aff0
+//  pinterest     #C92228 
+//  instagram     #3f729b
+
+
+//  Flat Colors
+
+//  Dark green    #16A085     #1ABC9C
+//  green         #27AE60     #2ECC71
+//  blue          #2980B9     #3498DB
+//  Purple        #8E44AD     #9B59B6
+//  Black         #2C3E50     #34495E
+//  ORANGE        #F39C12     #F1C40F
+//  Dark Orange   #D35400     #E67E22
+//  Red           #C0392B     #E74C3C
+//  Light gray    #BDC3C7     #ECF0F1
+//  Dark gray     #7F8C8D     #95A5A6
+
+
+//  Dark - Light shades
+
+//  #5e3b6b - #35213c   Purple
+//  #ffa443 - #ffa443   Yellow
+//  #a62152 - #921c48   Red 
+//  #88a70e - #aed512   Green
+//  #eb9875 - #cb673d   Brown
+//  #4fcdfb - #3da5cb   Blue
+
+
+
+
+//         Transition types
+//__________________________________________________
+
+@transition-1:              all 300ms ease-in-out 0s;
+@transition-2:              all 600ms ease-in-out 0s;
+@transition-3:              all 800ms ease-in-out 0s;
+@transition-4:              all 1200ms ease-in-out 0s;
+
+
+//          Shadow types
+//__________________________________________________
+
+@border-color:              @theme-color-darker;        
+@shadow-inset-color:        inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten(@border-color, 20%);
+@shadow-inset-gray:         inset 0px 10px 8px -10px rgba(0,0,0,0.5),inset 0px -10px 8px -10px rgba(0,0,0,0.4);
+@shadow-outer-color:        0 15px 10px -10px rgba(0, 0, 0, 0.2), 0 1px 4px lighten(@border-color, 20%);
+@shadow-outer-big-gray:     10px 0px 30px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
+@shadow-outer-gray:         0 10px 8px -8px rgba(0, 0, 0, 0.3), 0 1px 4px rgba(0, 0, 0, 0.2);
+
+@shadow-1:                  0 3px 3px 0 rgba(0,0,0,0.2);
+
+
+
+//		      fonts
+//__________________________________________________
+
+
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans'), local('JosefinSans'), url(../fonts/xgzbb53t8j-Mo-vYa23n5ugdm0LZdjqr5-oayXSOefg.woff2) format('woff2'), url(../fonts/xgzbb53t8j-Mo-vYa23n5nhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Francois One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Francois One Regular'), local('FrancoisOne-Regular'), url(../fonts/bYbkq2nU2TSx4SwFbz5sCBUOjZSKWg4xBWp_C_qQx0o.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Francois One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Francois One Regular'), local('FrancoisOne-Regular'), url(../fonts/bYbkq2nU2TSx4SwFbz5sCOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(../fonts/0eC6fl06luXEYWpBSJvXCFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(../fonts/Fl4y0QdOxyyTHEGMXX8kcVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(../fonts/Pru33qjShpZSmG3z6VYwnVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(../fonts/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('../fonts/Aaargh-webfont.eot');
+    src: url('../fonts/Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aaargh-webfont.woff') format('woff'),
+         url('../fonts/Aaargh-webfont.ttf') format('truetype'),
+         url('../fonts/Aaargh-webfont.svg#aaarghnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
